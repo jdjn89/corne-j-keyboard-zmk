@@ -18,6 +18,7 @@
 #define L_NAV 1
 #define L_NUM 2
 #define L_FN  3
+#define L_SYS 4
 
 #define QUICK_TAP_MS 175
 
@@ -86,6 +87,14 @@
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS CENTER) // Left-hand HRMs.
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS CENTER) // Right-hand HRMs.
 
+/* Smart-Number (https://github.com/urob/zmk-config) */
+
+#define SMART_NUM &smart_num NUM 0
+ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
+             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
+              tapping-term-ms = <200>;)
+
 /* Magic-shift (https://github.com/urob/zmk-config) */
 
 // Tap: repeat after alpha, else sticky-shift |
@@ -107,6 +116,8 @@ ZMK_ADAPTIVE_KEY(
 
 ZMK_COMBO(softoff, &soft_off, LT4 LM3 LB4)
 
+ZMK_CONDITIONAL_LAYER(sys, L_FN L_NUM, L_SYS) // FN + NUM --> SYS.
+
 /* Position layout (eyelash42.h)
  *
  * LT5 LT4 LT3 LT2 LT1 LT0          JS0          RT0 RT1 RT2 RT3 RT4 RT5
@@ -123,7 +134,7 @@ ZMK_LAYER(QWERTY,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────────┼──────────┼─────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp CAPS     &kp Z         &kp X         &kp C         &kp V         &kp B           &kp SPACE  &kp DOWN               &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &trans
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ╰──────────┴──────────╯           ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                             &kp LGUI      &lt L_NAV SPACE MAGIC_SHIFT                                      &num_word L_NUM &lt L_FN ENTER &kp BACKSPACE
+                                             &kp DELETE    &lt L_NAV SPACE MAGIC_SHIFT                                      SMART_NUM    &lt L_FN ENTER &kp BACKSPACE
 //                                          ╰─────────────┴─────────────┴─────────────╯                                   ╰─────────────┴─────────────┴─────────────╯
 ,
 &inc_dec_kp C_VOLUME_UP C_VOL_DN
@@ -131,7 +142,7 @@ ZMK_LAYER(QWERTY,
 
 ZMK_LAYER(NAV,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮            ╭──────────╮           ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &trans       &trans        &trans        &trans        &trans        &trans                     &trans                 &trans        &kp PG_DN     &kp UP        &kp PG_UP&trans        &trans        
+    &trans       &trans        &trans        &trans        &trans        &trans                     &trans                 &trans        &kp PG_DN     &kp UP        &kp PG_UP     &trans        &trans        
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ╭──────────┼──────────┼─────────╮ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &trans       &trans        &trans        &trans        &trans        &trans          &trans     &trans     &trans      &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT     &kp END       &trans        
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────────┼──────────┼─────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -166,6 +177,20 @@ ZMK_LAYER(FN,
     &trans       &kp F10       &kp F1        &kp F2        &kp F3        &trans          &trans     &trans                 &trans        &trans        &trans        &trans        &trans        &trans        
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ╰──────────┴──────────╯           ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                              &trans        &trans        &trans                                            &trans        &kp C_MUTE    &kp C_PLAY_PAUSE
+//                                          ╰─────────────┴─────────────┴─────────────╯                                   ╰─────────────┴─────────────┴─────────────╯
+,
+&scroll_encoder
+)
+
+ZMK_LAYER(SYS,
+//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮            ╭──────────╮           ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    &trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR                 &trans                 &trans        &trans        &trans        &trans        &trans        &trans
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ╭──────────┼──────────┼─────────╮ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &trans       &trans        &trans        &trans        &trans        &bootloader     &trans     &trans     &trans      &bootloader   &trans        &trans        &trans        &trans        &trans
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────────┼──────────┼─────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &trans       &trans        &trans        &trans        &trans        &sys_reset      &trans     &trans                 &sys_reset    &trans        &trans        &trans        &trans        &trans
+//╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ╰──────────┴──────────╯           ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
+                                             &trans        &trans        &trans                                            &trans        &trans        &trans
 //                                          ╰─────────────┴─────────────┴─────────────╯                                   ╰─────────────┴─────────────┴─────────────╯
 ,
 &scroll_encoder
