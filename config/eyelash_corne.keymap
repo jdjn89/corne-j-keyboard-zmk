@@ -89,10 +89,10 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS CENTER) // Right-hand HRMs.
 
 /* Smart-Number (https://github.com/urob/zmk-config) */
 
-#define SMART_NUM &smart_num NUM 0
+#define SMART_NUM &smart_num L_NUM 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
+ZMK_TAP_DANCE(num_dance, bindings = <&num_word L_NUM>, <&sl L_NUM>;
               tapping-term-ms = <200>;)
 
 /* Magic-shift (https://github.com/urob/zmk-config) */
