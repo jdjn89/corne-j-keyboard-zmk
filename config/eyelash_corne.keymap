@@ -116,7 +116,7 @@ ZMK_ADAPTIVE_KEY(
 
 ZMK_COMBO(softoff, &soft_off, LT4 LM3 LB4)
 
-ZMK_CONDITIONAL_LAYER(sys, L_FN L_NUM, L_SYS) // FN + NUM --> SYS.
+ZMK_CONDITIONAL_LAYER(sys, L_FN L_NAV, L_SYS) // FN + NAV --> SYS.
 
 /* Position layout (eyelash42.h)
  *
@@ -172,7 +172,7 @@ ZMK_LAYER(FN,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮            ╭──────────╮           ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &trans       &kp F12       &kp F7        &kp F8        &kp F9        &kp F5                     &trans                 &trans        &trans        &kp C_VOL_UP  &trans        &trans        &trans        
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ╭──────────┼──────────┼─────────╮ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans       &hml LGUI F11 &hml LALT F4  &hml LSHIFT F5 &hml LCTRL F6 &trans         &trans     &trans     &trans      &trans        &kp C_PREV    &kp C_VOL_DN  &kp C_NEXT   &trans        &trans        
+    &trans       &hml LGUI F11 &hml LALT F4  &hml LSHIFT F5 &hml LCTRL F6 &trans         &trans     &trans     &trans      &trans        &kp C_PREV    &kp C_VOL_DN  &kp C_NEXT    &trans        &trans        
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────────┼──────────┼─────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &trans       &kp F10       &kp F1        &kp F2        &kp F3        &trans          &trans     &trans                 &trans        &trans        &trans        &trans        &trans        &trans        
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ╰──────────┴──────────╯           ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
