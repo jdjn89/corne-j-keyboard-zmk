@@ -19,5 +19,11 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: v0.3 # Should match ZMK release.
+    - name: zmk-auto-layer
+      remote: urob
+      revision: v0.3 # Should match ZMK release.
+    - name: zmk-adaptive-key
+      remote: urob
+      revision: v0.3 # Should match ZMK release.
   self:
     path: config
