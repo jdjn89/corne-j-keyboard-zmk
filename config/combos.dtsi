@@ -1,0 +1,26 @@
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
+
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
+
+/* Position layout (eyelash42.h)
+ *
+ * LT5 LT4 LT3 LT2 LT1 LT0          JS0          RT0 RT1 RT2 RT3 RT4 RT5
+ * LM5 LM4 LM3 LM2 LM1 LM0      JS1 JS2 JS3      RM0 RM1 RM2 RM3 RM4 RM5
+ * LB5 LB4 LB3 LB2 LB1 LB0  LEC     JS4          RB0 RB1 RB2 RB3 RB4 RB5
+ *             LH2 LH1 LH0                       RH0 RH1 RH2
+ */
+
+// Define mod-morph with a *single* mod trigger for less repetition.
+#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2)                            \
+  ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>;                      \
+                bindings = <BINDING1>, <BINDING2>;)
+
+SIMPLE_MORPH(qexcl_morph, SFT, &kp LS(MINUS), &kp LS(N1))
+SIMPLE_MORPH(dlpar_morph, SFT, &kp LS(N4),    &kp LS(N3))
+SIMPLE_MORPH(qexcl_morph, SFT, &kp LS(MINUS), &kp LS(N1))
+
+ZMK_COMBO(qexcl_cb,   &qexcl_morph,  LT4 LT3,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(dbqt_cb,    &kp LS(N2),    LT3 LT2,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(dlpar_cb,   &dlpar_morph,  LT2 LT1,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
