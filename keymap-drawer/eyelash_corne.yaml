@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '[', s: '{'}
   - $$mdi:keyboard-tab$$
   - {t: A, h: LGUI}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ']', s: '}'}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '&shift_repeat', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
@@ -246,5 +246,14 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
+- p: [1, 2]
+  k: {t: Sft+-, s: Sft+1}
+  l: [QWERTY, NAV, NUMBER]
+- p: [2, 3]
+  k: Sft+2
+  l: [QWERTY, NAV, NUMBER]
+- p: [3, 4]
+  k: {t: Sft+4, s: Sft+3}
+  l: [QWERTY, NAV, NUMBER]
 - p: [1, 15, 29]
   k: '&soft_off'
