@@ -256,10 +256,10 @@ combos:
   k: {t: Sft+4, s: Sft+3}
   l: [QWERTY, NAV, NUMBER]
 - p: [14, 15]
-  k: {t: LS(5) 0, h: Alt+LGUI}
+  k: {t: Sft+5, h: Alt+LGUI, s: Sft+%}
   l: [QWERTY, NAV, NUMBER]
 - p: [15, 16]
-  k: {t: LS(6) 0, h: 'Alt+$$mdi:apple-keyboard-shift$$'}
+  k: {t: Sft+6, h: 'Alt+$$mdi:apple-keyboard-shift$$', s: Sft+^}
   l: [QWERTY, NAV, NUMBER]
 - p: [16, 17]
   k: {t: Sft+7, h: 'Ctl+$$mdi:apple-keyboard-shift$$', s: Ctl+Alt+-}
@@ -280,7 +280,7 @@ combos:
   k: {t: Sft+9, h: 'Alt+$$mdi:apple-keyboard-shift$$', s: Ctl+Alt+0}
   l: [QWERTY, NAV, NUMBER]
 - p: [25, 26]
-  k: {t: BACKSLASH 0, h: Alt+RGUI}
+  k: {t: \, h: Alt+RGUI, s: '|'}
   l: [QWERTY, NAV, NUMBER]
 - p: [37, 38]
   k: {t: '`', s: Ctl+Alt+8}
