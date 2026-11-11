@@ -194,7 +194,7 @@ layers:
   - $$mdi:volume-off$$
   - PLAY PAUSE
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '&trans.', type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   SYS:
   - {t: '$$mdi:transfer$$', type: trans}
