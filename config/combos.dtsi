@@ -17,10 +17,38 @@
   ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>;                      \
                 bindings = <BINDING1>, <BINDING2>;)
 
-SIMPLE_MORPH(qexcl_morph, SFT, &kp LS(MINUS), &kp LS(N1))
-SIMPLE_MORPH(dlpar_morph, SFT, &kp LS(N4),    &kp LS(N3))
-SIMPLE_MORPH(qexcl_morph, SFT, &kp LS(MINUS), &kp LS(N1))
+
+/* Horizontal combos - left hand */
+
+SIMPLE_MORPH(qexcl_morph, SFT, &kp LS(MINUS), &kp LS(N1))        // Question/Explamation Mark
+SIMPLE_MORPH(dlpar_morph, SFT, &kp LS(N4),    &kp LS(N3))        // $ and §
+SIMPLE_MORPH(slbsl_morph, SFT, &kp LS(N7),    &kp LC(LA(MINUS))) // slash backslash
+SIMPLE_MORPH(dqtvt_morph, SFT, &kp LS(N2),    &kp LC(LA(GRAVE))) // double qoute and vertical
 
 ZMK_COMBO(qexcl_cb,   &qexcl_morph,  LT4 LT3,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(dbqt_cb,    &kp LS(N2),    LT3 LT2,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(dbqt_cb,    &dqtvt_morph,  LT3 LT2,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(dlpar_cb,   &dlpar_morph,  LT2 LT1,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+ZMK_COMBO(pct_cb,   &kp LS(N5),      LM4 LM3,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LA(LGUI), KEYS_R)
+ZMK_COMBO(and_cb,   &kp LS(N6),      LM3 LM2,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LA(LSHIFT), KEYS_R)
+ZMK_COMBO(slbsl_cb, &kp slbsl_morph, LM2 LM1,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LC(LSHIFT), KEYS_R)
+
+
+/* Horizontal combos - right hand */
+
+ZMK_COMBO(eql_cb,    &kp LS(N0),    RT1 RT2,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(esz_cb,    &kp MINUS,     RT2 RT3,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(apo_cb,    &kp EQUAL,     RT3 RT4,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+
+SIMPLE_MORPH(lpar_morph, SFT, &kp LS(N8), &kp LC(LA(N7)))
+SIMPLE_MORPH(rpar_morph, SFT, &kp LS(N9), &kp LC(LA(N0)))
+SIMPLE_MORPH(lbkt_morph, SFT, &kp GRAVE,  &kp LC(LA(N8)))
+SIMPLE_MORPH(rbkt_morph, SFT, &kp LS(GRAVE), &kp LC(LA(N9)))
+
+ZMK_COMBO(lpar_cb, &lpar_morph,      RM1 RM2,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, RC(RSHFT), KEYS_L)
+ZMK_COMBO(rpar_cb, &rpar_morph,      RM2 RM3,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LA(RSHIFT), KEYS_L)
+ZMK_COMBO(hash_cb, &kp BACKSLASH,    RM3 RM4,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LA(RGUI), KEYS_L)
+ZMK_COMBO(lbkt_cb, &lbkt_morph,      RB1 RB2,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rbkt_cb, &rbkt_morph,      RB2 RB3,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(plmp_cb, &kp RIGHT_BRACKET,RB3 RB4,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
