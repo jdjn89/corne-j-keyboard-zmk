@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:keyboard-esc$$
+  - {t: <, h: '$$mdi:keyboard-esc$$'}
   - Q
   - W
   - E
@@ -191,11 +191,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:volume-off$$', type: held}
+  - $$mdi:volume-off$$
   - PLAY PAUSE
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '&trans.', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   SYS:
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -250,10 +250,46 @@ combos:
   k: {t: Sft+-, s: Sft+1}
   l: [QWERTY, NAV, NUMBER]
 - p: [2, 3]
-  k: Sft+2
+  k: {t: Sft+2, s: Ctl+Alt+`}
   l: [QWERTY, NAV, NUMBER]
 - p: [3, 4]
   k: {t: Sft+4, s: Sft+3}
+  l: [QWERTY, NAV, NUMBER]
+- p: [14, 15]
+  k: {t: LS(5) 0, h: Alt+LGUI}
+  l: [QWERTY, NAV, NUMBER]
+- p: [15, 16]
+  k: {t: LS(6) 0, h: 'Alt+$$mdi:apple-keyboard-shift$$'}
+  l: [QWERTY, NAV, NUMBER]
+- p: [16, 17]
+  k: {t: slbsl morph 0, h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
+  l: [QWERTY, NAV, NUMBER]
+- p: [8, 9]
+  k: Sft+0
+  l: [QWERTY, NAV, NUMBER]
+- p: [9, 10]
+  k: {t: '-', s: _}
+  l: [QWERTY, NAV, NUMBER]
+- p: [10, 11]
+  k: {t: '=', s: +}
+  l: [QWERTY, NAV, NUMBER]
+- p: [23, 24]
+  k: {t: Sft+8, h: 'Ctl+$$mdi:apple-keyboard-shift$$', s: Ctl+Alt+7}
+  l: [QWERTY, NAV, NUMBER]
+- p: [24, 25]
+  k: {t: Sft+9, h: 'Alt+$$mdi:apple-keyboard-shift$$', s: Ctl+Alt+0}
+  l: [QWERTY, NAV, NUMBER]
+- p: [25, 26]
+  k: {t: BACKSLASH 0, h: Alt+RGUI}
+  l: [QWERTY, NAV, NUMBER]
+- p: [37, 38]
+  k: {t: '`', s: Ctl+Alt+8}
+  l: [QWERTY, NAV, NUMBER]
+- p: [38, 39]
+  k: {t: Sft+`, s: Ctl+Alt+9}
+  l: [QWERTY, NAV, NUMBER]
+- p: [39, 40]
+  k: {t: ']', s: '}'}
   l: [QWERTY, NAV, NUMBER]
 - p: [1, 15, 29]
   k: '&soft_off'
