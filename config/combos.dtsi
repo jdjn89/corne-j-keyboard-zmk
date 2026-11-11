@@ -31,7 +31,7 @@ ZMK_COMBO(dlpar_cb,   &dlpar_morph,  LT2 LT1,  L_DEF L_NAV L_NUM, COMBO_TERM_FAS
 
 ZMK_COMBO(pct_cb,   &kp LS(N5),      LM4 LM3,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LA(LGUI), KEYS_R)
 ZMK_COMBO(and_cb,   &kp LS(N6),      LM3 LM2,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LA(LSHIFT), KEYS_R)
-ZMK_COMBO(slbsl_cb, &kp slbsl_morph, LM2 LM1,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LC(LSHIFT), KEYS_R)
+ZMK_COMBO(slbsl_cb, &slbsl_morph,    LM2 LM1,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LC(LSHIFT), KEYS_R)
 
 
 /* Horizontal combos - right hand */
