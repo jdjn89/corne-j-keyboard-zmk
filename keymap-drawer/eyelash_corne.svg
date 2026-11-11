@@ -581,10 +581,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<text x="224" y="87" class="combo tap">
-<tspan x="224" dy="-0.6em">slbsl</tspan><tspan x="224" dy="1.2em">…</tspan>
-</text>
+<text x="224" y="87" class="combo tap">Sft+7</text>
 <use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="216" y="83" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-shift"/>
+<text x="224" y="76" class="combo shifted"><tspan style="font-size: 67%">Ctl+Alt+-</tspan></text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="742" y="18" width="28" height="26" class="combo"/>
@@ -922,10 +921,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<text x="224" y="87" class="combo tap">
-<tspan x="224" dy="-0.6em">slbsl</tspan><tspan x="224" dy="1.2em">…</tspan>
-</text>
+<text x="224" y="87" class="combo tap">Sft+7</text>
 <use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="216" y="83" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-shift"/>
+<text x="224" y="76" class="combo shifted"><tspan style="font-size: 67%">Ctl+Alt+-</tspan></text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="742" y="18" width="28" height="26" class="combo"/>
@@ -1279,10 +1277,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
-<text x="224" y="87" class="combo tap">
-<tspan x="224" dy="-0.6em">slbsl</tspan><tspan x="224" dy="1.2em">…</tspan>
-</text>
+<text x="224" y="87" class="combo tap">Sft+7</text>
 <use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="216" y="83" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-shift"/>
+<text x="224" y="76" class="combo shifted"><tspan style="font-size: 67%">Ctl+Alt+-</tspan></text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="742" y="18" width="28" height="26" class="combo"/>

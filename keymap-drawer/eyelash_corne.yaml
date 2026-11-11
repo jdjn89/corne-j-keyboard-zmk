@@ -262,7 +262,7 @@ combos:
   k: {t: LS(6) 0, h: 'Alt+$$mdi:apple-keyboard-shift$$'}
   l: [QWERTY, NAV, NUMBER]
 - p: [16, 17]
-  k: {t: slbsl morph 0, h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
+  k: {t: Sft+7, h: 'Ctl+$$mdi:apple-keyboard-shift$$', s: Ctl+Alt+-}
   l: [QWERTY, NAV, NUMBER]
 - p: [8, 9]
   k: Sft+0
