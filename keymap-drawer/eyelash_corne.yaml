@@ -250,7 +250,7 @@ combos:
   k: {t: Sft+-, s: Sft+1}
   l: [QWERTY, NAV, NUMBER]
 - p: [2, 3]
-  k: {t: Sft+2, s: Ctl+Alt+`}
+  k: {t: Sft+2, s: AltGr+`}
   l: [QWERTY, NAV, NUMBER]
 - p: [3, 4]
   k: {t: Sft+4, s: Sft+3}
