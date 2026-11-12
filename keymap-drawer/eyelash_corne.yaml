@@ -250,7 +250,7 @@ combos:
   k: {t: Sft+-, s: Sft+1}
   l: [QWERTY, NAV, NUMBER]
 - p: [2, 3]
-  k: {t: Sft+2, s: AltGr+`}
+  k: {t: Sft+2, s: AltGr+\}
   l: [QWERTY, NAV, NUMBER]
 - p: [3, 4]
   k: {t: Sft+4, s: Sft+3}
@@ -283,10 +283,10 @@ combos:
   k: {t: \, h: Alt+RGUI, s: '|'}
   l: [QWERTY, NAV, NUMBER]
 - p: [37, 38]
-  k: {t: '`', s: Ctl+Alt+8}
+  k: {t: \, s: Ctl+Alt+8}
   l: [QWERTY, NAV, NUMBER]
 - p: [38, 39]
-  k: {t: Sft+`, s: Ctl+Alt+9}
+  k: {t: Sft+\, s: Ctl+Alt+9}
   l: [QWERTY, NAV, NUMBER]
 - p: [39, 40]
   k: {t: ']', s: '}'}
