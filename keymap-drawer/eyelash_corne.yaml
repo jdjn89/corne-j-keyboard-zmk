@@ -264,6 +264,15 @@ combos:
 - p: [16, 17]
   k: {t: Sft+7, h: 'Ctl+$$mdi:apple-keyboard-shift$$', s: Ctl+Alt+-}
   l: [QWERTY, NAV, NUMBER]
+- p: [29, 32]
+  k: Ctl+X
+  l: [QWERTY, NAV, NUMBER]
+- p: [29, 30]
+  k: Ctl+INS
+  l: [QWERTY, NAV, NUMBER]
+- p: [31, 32]
+  k: Sft+INS
+  l: [QWERTY, NAV, NUMBER]
 - p: [8, 9]
   k: Sft+0
   l: [QWERTY, NAV, NUMBER]
