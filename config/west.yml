@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+    - name: ykiewang
+      url-base: https://github.com/ykiewang
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules
@@ -25,5 +27,8 @@ manifest:
     - name: zmk-adaptive-key
       remote: urob
       revision: v0.3 # Should match ZMK release.
+    - name: zmk-keybeacon
+      remote: ykiewang
+      revision: v1.0.0
   self:
     path: config
