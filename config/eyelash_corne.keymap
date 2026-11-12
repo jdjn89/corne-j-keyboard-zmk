@@ -121,6 +121,9 @@ ZMK_ADAPTIVE_KEY(
       max-prior-idle-ms = <1200>;
       strict-modifiers;
     };)  // Requires zmk-adaptive-key module.
+&caps_word {
+  continue-list = <FSLH LS(FSLH)>;
+};
 
 ZMK_COMBO(softoff, &soft_off, LT4 LM3 LB4)
 
