@@ -23,7 +23,7 @@
 SIMPLE_MORPH(qexcl_morph, SFT, &kp LS(MINUS), &kp LS(N1))        // Question/Explamation Mark
 SIMPLE_MORPH(dlpar_morph, SFT, &kp LS(N4),    &kp LS(N3))        // $ and §
 SIMPLE_MORPH(slbsl_morph, SFT, &kp LS(N7),    &kp LC(LA(MINUS))) // slash backslash
-SIMPLE_MORPH(dqtvt_morph, SFT, &kp LS(N2),    &kp RA(NON_US_BACKSLASH))     // double qoute and vertical
+SIMPLE_MORPH(quote_morph, SFT, LS(BACKSLASH), &kp LS(N2)       // quoate and double qoute    
 
 ZMK_COMBO(qexcl_cb,   &qexcl_morph,  LT4 LT3,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(dbqt_cb,    &dqtvt_morph,  LT3 LT2,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
@@ -48,10 +48,11 @@ SIMPLE_MORPH(lpar_morph, SFT, &kp LS(N8), &kp LC(LA(N7)))
 SIMPLE_MORPH(rpar_morph, SFT, &kp LS(N9), &kp LC(LA(N0)))
 SIMPLE_MORPH(lbkt_morph, SFT, &kp NON_US_BACKSLASH,  &kp LC(LA(N8)))
 SIMPLE_MORPH(rbkt_morph, SFT, &kp LS(NON_US_BACKSLASH), &kp LC(LA(N9)))
+SIMPLE_MORPH(hsvt_morph, SFT, &kp BACKSLASH, &kp RA(NON_US_BACKSLASH)))
 
 ZMK_COMBO(lpar_cb, &lpar_morph,      RM1 RM2,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, RC(RSHFT), KEYS_L)
 ZMK_COMBO(rpar_cb, &rpar_morph,      RM2 RM3,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LA(RSHIFT), KEYS_L)
-ZMK_COMBO(hash_cb, &hmr LA(RGUI) BACKSLASH, RM3 RM4,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(hash_cb, &hsvt_morph,      RM3 RM4,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST, LA(LGUI), KEYS_L))
 ZMK_COMBO(lbkt_cb, &lbkt_morph,      RB1 RB2,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rbkt_cb, &rbkt_morph,      RB2 RB3,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(plmp_cb, &kp RIGHT_BRACKET,RB3 RB4,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
