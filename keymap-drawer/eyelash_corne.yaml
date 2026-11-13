@@ -291,6 +291,12 @@ combos:
 - p: [25, 26]
   k: {t: \, h: Alt+LGUI, s: AltGr+\}
   l: [QWERTY, NAV, NUMBER]
+- p: [37, 38]
+  k: {t: \, s: Ctl+Alt+8}
+  l: [QWERTY, NAV, NUMBER]
+- p: [38, 39]
+  k: {t: Sft+\, s: Ctl+Alt+9}
+  l: [QWERTY, NAV, NUMBER]
 - p: [39, 40]
   k: {t: ']', s: '}'}
   l: [QWERTY, NAV, NUMBER]
