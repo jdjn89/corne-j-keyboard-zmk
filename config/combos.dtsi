@@ -23,7 +23,7 @@
 SIMPLE_MORPH(qexcl_morph, SFT, &kp LS(MINUS), &kp LS(N1))        // Question/Explamation Mark
 SIMPLE_MORPH(dlpar_morph, SFT, &kp LS(N4),    &kp LS(N3))        // $ and §
 SIMPLE_MORPH(slbsl_morph, SFT, &kp LS(N7),    &kp LC(LA(MINUS))) // slash backslash
-SIMPLE_MORPH(quote_morph, SFT, LS(BACKSLASH), &kp LS(N2))        // quoate and double qoute    
+SIMPLE_MORPH(quote_morph, SFT, &kp LS(BACKSLASH), &kp LS(N2))        // quoate and double qoute    
 
 ZMK_COMBO(qexcl_cb,   &qexcl_morph,  LT4 LT3,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(dbqt_cb,    &quote_morph,  LT3 LT2,  L_DEF L_NAV L_NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
