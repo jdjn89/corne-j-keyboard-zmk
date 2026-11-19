@@ -15,8 +15,8 @@ layers:
   - P
   - {t: '[', s: '{'}
   - $$mdi:keyboard-tab$$
-  - {t: A, h: LGUI}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: LGUI}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
@@ -26,8 +26,8 @@ layers:
   - H
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: RGUI, s: ':'}
+  - {t: L, h: RGUI}
+  - {t: ;, h: '$$mdi:apple-keyboard-option$$', s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-caps$$
   - Z
@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - {t: ']', s: '}'}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - {t: '&shift_repeat', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: '$$mdi:keyboard-space$$', h: FN}
   - {t: '&num_dance', h: NUMBER}
-  - {t: '$$mdi:keyboard-return$$', h: FN}
+  - {t: '&shift_repeat', h: '$$mdi:apple-keyboard-shift$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: '$$mdi:keyboard-return$$', h: NAV}
   - {t: '$$mdi:backspace$$', type: backspace}
   NAV:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -64,8 +64,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LGUI, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: LALTL, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: GUI, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -93,10 +93,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -113,8 +113,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: KP 0, h: LGUI}
-  - {t: KP 4, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: KP 0, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: KP 4, h: LGUI}
   - {t: KP 5, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: KP 6, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -143,8 +143,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FN:
@@ -162,8 +162,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: F11, h: LGUI}
-  - {t: F4, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F11, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F4, h: LGUI}
   - {t: F5, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -191,10 +191,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - PLAY PAUSE
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   SYS:
   - {t: '$$mdi:transfer$$', type: trans}
