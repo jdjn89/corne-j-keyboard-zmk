@@ -259,7 +259,7 @@ combos:
   k: {t: Sft+5, h: Alt+LGUI, s: Sft+%}
   l: [QWERTY, NAV, NUMBER]
 - p: [15, 16]
-  k: {t: Sft+6, h: 'Alt+$$mdi:apple-keyboard-shift$$', s: Sft+^}
+  k: {t: Sft+6, h: 'Gui+$$mdi:apple-keyboard-shift$$', s: Sft+^}
   l: [QWERTY, NAV, NUMBER]
 - p: [16, 17]
   k: {t: Sft+7, h: 'Ctl+$$mdi:apple-keyboard-shift$$', s: Ctl+Alt+-}
@@ -286,10 +286,10 @@ combos:
   k: {t: Sft+8, h: 'Ctl+$$mdi:apple-keyboard-shift$$', s: Ctl+Alt+7}
   l: [QWERTY, NAV, NUMBER]
 - p: [24, 25]
-  k: {t: Sft+9, h: 'Alt+$$mdi:apple-keyboard-shift$$', s: Ctl+Alt+0}
+  k: {t: Sft+9, h: 'Gui+$$mdi:apple-keyboard-shift$$', s: Ctl+Alt+0}
   l: [QWERTY, NAV, NUMBER]
 - p: [25, 26]
-  k: {t: \, h: Alt+LGUI, s: AltGr+\}
+  k: {t: \, h: Alt+RGUI, s: AltGr+\}
   l: [QWERTY, NAV, NUMBER]
 - p: [37, 38]
   k: {t: \, s: Ctl+Alt+8}

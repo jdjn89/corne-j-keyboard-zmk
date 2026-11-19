@@ -630,7 +630,7 @@ rect.held, rect.combo.held {
 <g class="combo combopos-14">
 <rect rx="6" ry="6" x="854" y="85" width="28" height="26" class="combo"/>
 <text x="868" y="98" class="combo tap">\</text>
-<text x="868" y="109" class="combo hold"><tspan style="font-size: 75%">Alt+LGUI</tspan></text>
+<text x="868" y="109" class="combo hold"><tspan style="font-size: 75%">Alt+RGUI</tspan></text>
 <text x="868" y="87" class="combo shifted"><tspan style="font-size: 86%">AltGr+\</tspan></text>
 </g>
 <g class="combo combopos-15">
@@ -985,7 +985,7 @@ rect.held, rect.combo.held {
 <g class="combo combopos-14">
 <rect rx="6" ry="6" x="854" y="85" width="28" height="26" class="combo"/>
 <text x="868" y="98" class="combo tap">\</text>
-<text x="868" y="109" class="combo hold"><tspan style="font-size: 75%">Alt+LGUI</tspan></text>
+<text x="868" y="109" class="combo hold"><tspan style="font-size: 75%">Alt+RGUI</tspan></text>
 <text x="868" y="87" class="combo shifted"><tspan style="font-size: 86%">AltGr+\</tspan></text>
 </g>
 <g class="combo combopos-15">
@@ -1356,7 +1356,7 @@ rect.held, rect.combo.held {
 <g class="combo combopos-14">
 <rect rx="6" ry="6" x="854" y="85" width="28" height="26" class="combo"/>
 <text x="868" y="98" class="combo tap">\</text>
-<text x="868" y="109" class="combo hold"><tspan style="font-size: 75%">Alt+LGUI</tspan></text>
+<text x="868" y="109" class="combo hold"><tspan style="font-size: 75%">Alt+RGUI</tspan></text>
 <text x="868" y="87" class="combo shifted"><tspan style="font-size: 86%">AltGr+\</tspan></text>
 </g>
 <g class="combo combopos-15">
